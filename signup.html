@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte</title>
+    <link rel="stylesheet" href="signup.css">
+    <script language="javascript" src="controle.js">
+    </script>
+<style>
+    .error-message {
+      color: red;
+      font-style: italic;
+    }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <form  name="fsgn" method="POST" action="signup.php">
+            <h2>Créer un compte</h2>
+            <div class="form-group">
+                <label for="username">Nom d'utilisateur:</label>
+                <input type="text" id="username" name="username" required>
+                <span id="username-error" class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+                <span id="nom-error" class="error-message"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+                <span id="prenom-error" class="error-message"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Adresse e-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="email-error" class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+                <span id="password-error" class="error-message"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="password">Confirmer Mot de passe:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                <span id="confirm-password-error" class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="user-type">Type d'utilisateur:</label>
+                <select id="user-type" name="user-type" required>
+                    <option value="admin">admin</option>
+                    <option value="other">autre</option>
+                </select>
+                <span id="user-type-error" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" onclick="return validateForm()">Créer un compte</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

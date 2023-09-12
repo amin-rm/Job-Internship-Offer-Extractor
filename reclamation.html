@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Réclamation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script language="javascript" src="controle.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulaire de Réclamation</h1>
+    <form name="f" method="POST" action="insertion.php">
+      <div class="form-group">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" onclick="return verif()">Envoyer</button>
+    </form>
+  </div>
+</body>
+</html>
