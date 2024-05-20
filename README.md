@@ -40,3 +40,21 @@ pip install PyPDF2
 pip install pytesseract
 pip install simplegmail
 pip install mysql-connector-python
+```
+
+### Setting Up the Server
+
+1. Install XAMPP: Download and install XAMPP from here.
+2. Place the Project: Once XAMPP is installed, place the project folder in the xampp/htdocs directory.
+3. Start Apache and MySQL: Open the XAMPP control panel and start both Apache and MySQL.
+4. Access the Website: Open your web browser and navigate to http://localhost/[project_name]/login.html.
+
+## Usage
+1. Fetch Emails: The application uses the Simplegmail library to fetch emails containing job/internship offers.
+2. Process Attachments: It processes attachments (PDFs and images) to extract relevant information using PyPDF2 and Pytesseract.
+3. Data Extraction: SpaCy is used to extract specific details like email addresses, phone numbers, company names, required skills, job positions, and locations.
+4. Store Data: Extracted data is stored in a MySQL database using the MySQL Connector.
+5. Display Data: The frontend, built with PHP, renders the data for easy viewing and management.
+
+## Customization
+You can adjust this application to meet your specific needs by modifying the AI extraction parameters, database schema, and frontend design.
