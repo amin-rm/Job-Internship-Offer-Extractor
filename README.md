@@ -2,7 +2,7 @@
 
 ## Overview
 
-This web application leverages AI to extract relevant job information from job/internship offers received via email. It is particularly useful for candidates, students, and university professionals who need to manage job/internship offers efficiently. The application extracts information such as email, telephone number, company name, required skills, field, job/internship position, and country from received emails and their attachments (images/PDFs). Additionally, it can handle multiple offers within the same PDF file.
+This web application leverages AI to extract relevant job information from job/internship offers received via email. It is particularly useful for candidates, students, and university professionals who receive job/internship catalogs from companies and need to manage job/internship offers efficiently. The application extracts information such as email, telephone number, company name, required skills, field, job/internship position, and country from received emails and their attachments (images/PDFs). Additionally, it can handle multiple offers within the same PDF file.
 
 ## Features
 
